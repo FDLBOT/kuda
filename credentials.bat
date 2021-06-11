@@ -17,6 +17,6 @@ ICACLS C:\Windows\Temp /grant administrator:F >nul
 ICACLS C:\Windows\installer /grant administrator:F >nul
 echo Login credentials:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Failed!"
-echo User: administrator
-echo Pass: @FDLGANZ
+echo User: FreeRdpFDL
+echo Pass: @FDL12345
 ping -n 10 127.0.0.1 >nul
